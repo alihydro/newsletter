@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     subscribeButton.addEventListener("click", function () {
       const emailValue = emailInput.value.trim();
       if (emailValue.includes("@")) {
-        window.location.href = "https://alihydro.github.io/elzero/";
+        window.location.href = "https://alihydro.github.io/success/";
       }
     });
     
