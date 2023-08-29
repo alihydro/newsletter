@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+ :root {
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%)
+ }
+ html {
+     scroll-behavior: smooth;
+ }
+ 
+ 
+ body {
+  background-color: var(--Charcoal-Grey);
+  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+ }
+
+   a {
+    text-decoration: none;
+   }
+
+
+   /* end globel */
+   /* start landing  */
+.landing {
+    background-color: var(--White);
+    display: flex;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.image-desc img {
+    width: 300px;
+}
+.image-phone img {
+    display: none;
+}
+.text {
+    color: var(--Dark-Slate-Grey);
+    width: 295px;
+    margin: 50px 60px 50px 30px;
+    font-size: 13px;
+}
+.text h1 {
+        font-size: 45px;
+        line-height: 1;
+}
+.text p {
+    color: var(--Dark-Slate-Grey);
+    font-weight: 400;
+    margin: 20px 0;
+}
+.text li {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+.text img {
+        margin-right: 10px;
+    } 
+h2 {
+        font-size: 12px;
+    }
+    input[type="text"] {
+        padding: 12px;
+        width: 100%;
+        border-radius: 5px;
+        margin: 8px 0;
+        border: none;
+        border: 1px solid var(--Grey);
+        color: var(--Charcoal-Grey);
+        outline: none;
+        font-weight: 700;
+    }
+    input[type="text"]:focus {
+        border: 1px solid var(--Dark-Slate-Grey);
+    }
+    button {
+        padding: 14px;
+        width: 100%;
+        color: white;
+        background-color: var(--Dark-Slate-Grey);
+        border: none;
+        border-radius: 10px;
+        margin-top: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    
+    } 
+
+    button:hover {
+        background: rgb(255,105,62);
+        background: linear-gradient(90deg, rgba(255,105,62,1) 0%, rgba(254,95,92,1) 50%, rgba(255,83,121,1) 100%);
+    }
+    ul {
+        margin-bottom: 35px;
+            list-style: none;
+    }
+    .form-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .form-text h1 {
+        font-size: 10px;
+        color: var(--Tomato);
+        display: none;
+    }
+    @media (max-width:730px) {
+        .landing {
+            padding: 0;
+            flex-direction: column-reverse;
+            max-width: 375px;
+            flex-wrap: wrap;
+            top: 0;
+            transform: translate(-50%, 0);
+            border-radius: 0;
+            font-weight: 700;
+            width: 100%;
+        }
+        .image-desc img {
+           display: none;
+        }
+        .text {
+            color: var(--Dark-Slate-Grey);
+            width: 100%;
+            margin: 0;
+            font-size: 13px;
+            padding: 25px;
+        }
+        .image-phone img {
+            display: block;
+    max-width: 375px;
+    width: 100%;
+        }
+        button {
+font-weight: 700;
+        }
+        .text-tow {
+            width: 100%;
+            margin: 20px;
+            font-size: 13px;
+            height: 100vh;
+            margin-top: 20vh !important;
+        }
+    }
+
+
+
+
+
+
+
+    /* index 2 */
+    .text-tow p span {
+        color: var(--Charcoal-Grey);
+        font-weight: 700;
+    }
+    .text-tow {
+        color: var(--Dark-Slate-Grey);
+        width: 295px;
+        margin:20px;
+        font-size: 13px;
+    }
+    .text-tow h1 {
+            font-size: 45px;
+            line-height: 1;
+    }
+    .text-tow p {
+        color: var(--Dark-Slate-Grey);
+        font-weight: 400;
+        margin: 20px 0;
+    }
+    .text-tow li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .text-tow img {
+            margin-right: 10px;
+            width: 50px;
+            margin-bottom: 27px;
+        } 
